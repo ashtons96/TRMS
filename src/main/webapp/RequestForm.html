@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Request Form</title>
+<link href="\Users\ashto\Desktop\FormPage.css" rel="stylesheet" type ="text/css">
+<script src=""></script>
+</head>
+
+<body>
+<form id="Employee_RF" action = "Request" name="Employee_Request" method="post">
+<table >
+  <tbody>
+   
+    <tr>
+      <th colspan="2" class="head" scope="col">Tuition Reimbursement Request Form</th>
+    </tr>
+    
+    <tr >
+     
+      <td> First Name</td>
+      <td>
+      <input type="text" name="first_name" id="f_name" form="Employee_Reimbursement">
+      </td>
+       
+    </tr>
+    <tr>
+      <td>Last Name </td>
+      <td>
+      <input type="text" name="last_name" id="l_name" form="Employee_Reimbursement">
+      </td>
+    </tr>
+    
+    <tr>
+      <td>Date </td>
+      <td>
+      <input type="date" name="date" id="date" form="Employee_Reimbursement">
+      </td>
+    </tr>
+      <tr>
+      <td>Time</td>
+      <td>
+      <input type="time" name="time" id="time" form="Employee_Reimbursement">
+      </td>
+    </tr>
+     <tr>
+      <td>Location</td>
+      <td>
+      <input type="text" name="location" id="location" form="Employee_Reimbursement">
+      </td>
+    </tr>
+    <tr >
+      <td>Cost(Nearest $)</td>
+      <td>
+      <input type="number" name="cost" id="cost" form="Employee_Reimbursement">
+      </td>
+    </tr>
+    <tr>
+      <td>Grading Format</td>
+      <td>
+      <input type="text" name="grading_format" id="grading_format" form="Employee_Reimbursement">
+      </td>
+    </tr>
+    <tr >
+      <td>Type Of Event</td>
+      <td>
+      <input type="text" name="eventtype" id="event_type" form="Employee_Reimbursement">
+      </td>
+    </tr>
+    
+
+       <tr>
+      <td> Additional Comments</td>
+      <td>
+      <input type="text" name="comments" id="COMMENTS" form="Employee_Reimbursement">
+      </td>
+    </tr>
+      
+
+
+        <tr>
+      <td>Attachments</td>
+      <td>
+        <script>
+function attachmentfunction() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "file");
+    document.body.appendChild(x);
+}
+</script>
+      <button onclick="attachmentfunction()">Upload File</button>
+
+      <td></td>
+    </tr>
+      <tr >
+        
+      <th colspan="2" scope="col">
+         <input type="submit"  ID="SUBMIT" form="Employee_Reimbursement">
+        <td>SUBMIT</td>
+       
+    </tr>    
+  </tbody>
+
+</table>
+</form>
+</body>
+</html>
